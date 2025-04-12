@@ -168,7 +168,6 @@ img {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  text-align: center;
 }
 
 .hero::before,
@@ -194,6 +193,7 @@ img {
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .hero-greeting {
@@ -223,7 +223,6 @@ img {
 .hero-links {
   display: flex;
   gap: 1rem;
-  justify-content: center;
 }
 
 /* Section Common Styles */
@@ -271,6 +270,11 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 2rem;
   margin-top: 1.5rem;
+}
+
+.skills-heading {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .skill-category h4 {
