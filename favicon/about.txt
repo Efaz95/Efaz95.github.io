@@ -1,1 +1,6 @@
-This favicon was created with a four-color palette: 0D1B2A, 1B263B, 415A77, and 778DA9. It represents Efaz Khan's personal brand.
+This favicon was generated using the following font:
+
+- Font Title: Abhaya Libre
+- Font Author: undefined
+- Font Source: https://fonts.gstatic.com/s/abhayalibre/v17/e3tmeuGtX-Co5MNzeAOqinEge0PWovdU4w.ttf
+- Font License: undefined)
