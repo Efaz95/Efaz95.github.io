@@ -4,10 +4,27 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
+:root {
+  /* Color Palette */
+  --dark-navy: #0D1B2A;
+  --medium-navy: #1B263B;
+  --blue: #415A77;
+  --blue-gray: #778DA9;
+  
+  /* Applied Colors */
+  --bg-color: var(--dark-navy);
+  --card-bg: var(--medium-navy);
+  --primary-color: var(--blue);
+  --secondary-color: var(--blue-gray);
+  --text-color: #E0E1DD;
+  --muted-color: #C5C6C7;
+}
+
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #192734;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 @media (min-width: 992px) {
@@ -25,7 +42,7 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
-  color: #164d56;
+  color: var(--primary-color);
 }
 
 h1 {
