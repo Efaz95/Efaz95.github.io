@@ -283,17 +283,16 @@ img {
   color: var(--secondary-color);
 }
 
-.skill-category ul li {
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 1rem;
+.skill-category ul.skill-list li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
 }
 
-.skill-category ul li::before {
-  content: '▹';
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
+.skill-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
 }
 
 /* Skill Logos */
