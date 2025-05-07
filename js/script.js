@@ -104,4 +104,21 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Typing animation for hero greeting
+  function typeGreeting(text, elementId, speed = 70) {
+    const el = document.getElementById(elementId);
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        el.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    el.textContent = '';
+    type();
+  }
+
+  typeGreeting('Hi, my name is', 'typing-greeting', 70);
 }); 
