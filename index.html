@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
-  <!-- Favicon - optimized for tab visibility -->
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -12,257 +12,285 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Efaz Khan - Software Engineer specializing in backend development and cloud technologies">
+  <meta name="description" content="Efaz Khan - Software Engineer specializing in backend development, cloud infrastructure, and data engineering">
   <meta name="author" content="Efaz Khan">
-  <meta name="theme-color" content="#0D1B2A">
+  <meta name="theme-color" content="#0a0a0b">
 
-  <title>Efaz Khan - Software Engineer</title>
+  <title>Efaz Khan | Software Engineer</title>
 
-  <!-- Custom fonts -->
+  <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Custom styles -->
+  <!-- Styles -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <div class="container">
+    
+    <!-- Navigation -->
     <nav class="nav">
-      <div class="container nav-content">
-        <div class="nav-brand">EK</div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://prioritiai.com/" target="_blank" class="demo-link">PrioritiAI Demo</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <span class="logo-bracket">[</span>
+          <span class="logo-text">EK</span>
+          <span class="logo-bracket">]</span>
+        </a>
+        <div class="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="https://github.com/Efaz95" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/efazkhan" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <button class="nav-toggle" aria-label="Menu">
           <span></span>
           <span></span>
         </button>
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-greeting"><span id="typing-greeting"></span></span>
-          <h1>Efaz Khan</h1>
-          <p class="hero-description">I'm a Software Engineer specializing in backend development, cloud technologies, and building scalable applications. Currently focused on creating high-performance systems.</p>
-          <div class="hero-links">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </header>
-
-  <section id="about" class="section">
-    <div class="container">
-      <span class="section-subtitle">About Me</span>
-      <h2 class="section-title">Who I Am</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>I'm a Software Engineer with experience in building high-performing RESTful APIs, cloud-native applications, and cross-platform mobile solutions. My expertise lies in Python, Java, cloud technologies, and modern software development practices.</p>
-          <p>I enjoy creating elegant solutions to complex problems and am constantly exploring new technologies to expand my skill set. When I'm not coding, you can find me exploring new technologies or working on open-source projects.</p>
-        </div>
-        <div class="skills">
-          <h3 class="skills-heading">Technical Skills</h3>
-          <div class="skills-grid">
-            <div class="skill-category">
-              <h4>Languages</h4>
-              <ul class="skill-list">
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python"> Python</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-icon" alt="Java"> Java</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-icon" alt="JavaScript"> JavaScript</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon" alt="HTML"> HTML</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon" alt="CSS"> CSS</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h4>Frameworks</h4>
-              <ul class="skill-list">
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="skill-icon" alt="FastAPI"> FastAPI</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="skill-icon" alt="Django"> Django</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" class="skill-icon" alt="Spring Boot"> Spring Boot</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js"> Node.js</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h4>Tools & Platforms</h4>
-              <ul class="skill-list">
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="skill-icon" alt="GCP"> GCP</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" class="skill-icon" alt="AWS"> AWS</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="skill-icon" alt="Docker"> Docker</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" class="skill-icon" alt="Kubernetes"> Kubernetes</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon" alt="Git"> Git</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="section">
-    <div class="container">
-      <span class="section-subtitle">Experience</span>
-      <h2 class="section-title">Where I've Worked</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>Software Engineer</h3>
-            <h4>Randstad USA</h4>
-            <p class="timeline-date">June 2021 - July 2023</p>
-            <ul>
-              <li>Built high-performing asynchronous RESTful APIs with Python and FastAPI, integrated with Apigee</li>
-              <li>Designed Google Cloud Dialogflow chatbots with 99% intent recognition accuracy</li>
-              <li>Implemented CI/CD pipelines with GCP, GitLab, and Cloud Run</li>
-              <li>Containerized microservices with Docker and Kubernetes</li>
-              <li>Improved security by refactoring JWT generation with short-lived tokens</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>Software Engineer</h3>
-            <h4>IHRC, Inc | Centers for Disease Control</h4>
-            <p class="timeline-date">March 2021 - June 2021</p>
-            <ul>
-              <li>Built cross-platform mobile apps for iOS and Android using Flutter and Dart</li>
-              <li>Optimized data retrieval and processing speeds by 20%</li>
-              <li>Developed advanced UI/UX features using Flutter widgets</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>Software Research Intern</h3>
-            <h4>University of Michigan</h4>
-            <p class="timeline-date">January 2021 - March 2021</p>
-            <ul>
-              <li>Researched and authored educational materials for Python programming courses</li>
-              <li>Developed Python projects and created a research platform</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="section">
-    <div class="container">
-      <span class="section-subtitle">Education</span>
-      <h2 class="section-title">Academic Background</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>Georgia State University</h3>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p class="timeline-date">August 2016 - December 2020</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <span class="section-subtitle">My Work</span>
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card featured">
-          <div class="project-content">
-            <h3>PrioritiAI</h3>
-            <p>A sophisticated task prioritization application that leverages machine learning to help users organize and manage their tasks efficiently. Features include:</p>
-            <ul>
-              <li>AI-powered task prioritization based on deadlines, importance, and user behavior</li>
-              <li>Intuitive user interface with drag-and-drop functionality</li>
-              <li>Smart notifications and reminders</li>
-              <li>Data-driven insights and productivity analytics</li>
-            </ul>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>Machine Learning</span>
-              <span>Google Cloud Platform</span>
-              <span>JavaScript</span>
-              <span>Tailwind</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Efaz95/prioritiai" class="btn btn-primary" target="_blank">Source Code</a>
-              <a href="https://prioritiai.com/" class="btn btn-secondary" target="_blank">Live Demo</a>
-            </div>
-          </div>
-          <div class="project-image">
-            <img src="screenshot1.png" alt="PrioritiAI Screenshot">
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-content">
-            <h3>Localster</h3>
-            <p>A platform to connect local businesses with influencers.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Django</span>
-              <span>PostgreSQL</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Efaz95/Localster" class="btn btn-primary" target="_blank">Source Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-content">
-            <h3>Feedpons</h3>
-            <p>A project connecting food-insecure individuals with support services.</p>
-            <div class="project-tech">
-              <span>Java</span>
-              <span>Spring</span>
-              <span>MySQL</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/foodease/feedpons" class="btn btn-primary" target="_blank">Source Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <span class="section-subtitle">Get In Touch</span>
-      <h2 class="section-title">Contact Me</h2>
-      <div class="contact-content">
-        <p>Feel free to reach out to me for any opportunities or collaborations!</p>
-        <div class="contact-links">
-          <a href="mailto:efaz95@gmail.com" class="contact-link">
-            <i class="fas fa-envelope"></i> efazahmed@gmail.com
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <p class="hero-label">Software Engineer</p>
+        <h1 class="hero-name">Efaz Khan</h1>
+        <p class="hero-bio">Software engineer with experience in backend development, cloud infrastructure and data engineering. AWS certified Developer & Solutions Architect.</p>
+        <div class="hero-links">
+          <a href="mailto:efazahmed@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Contact
           </a>
-          <a href="https://www.linkedin.com/in/efazkhan" class="contact-link" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="https://github.com/Efaz95" class="contact-link" target="_blank">
+          <a href="https://github.com/Efaz95" target="_blank" class="btn btn-ghost">
             <i class="fab fa-github"></i> GitHub
           </a>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-aside">
+        <div class="cert-badges">
+          <a href="https://www.credly.com/badges/3e336c67-2e40-4f52-b913-e2d0c62073f9/public_url" target="_blank" class="cert-badge">
+            <i class="fab fa-aws"></i>
+            <span>Developer Associate · Aug 2025</span>
+          </a>
+          <a href="https://www.credly.com/badges/bf86da03-00f3-460c-bb21-407432e566ec/public_url" target="_blank" class="cert-badge">
+            <i class="fab fa-aws"></i>
+            <span>Solutions Architect · Dec 2025</span>
+          </a>
+        </div>
+      </div>
+    </header>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Designed & Built by Efaz Khan &copy; 2024</p>
-    </div>
-  </footer>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer</h3>
+                <p class="company">Randstad USA</p>
+              </div>
+              <span class="date">Jun 2021 — Jul 2023</span>
+            </div>
+            <ul class="achievements">
+              <li>Developed asynchronous RESTful APIs in Python/FastAPI to power backend services for the candidate-screening chatbot.</li>
+              <li>Standardized API testing and documentation with Postman to ensure consistent integration workflows and reduce errors during development.</li>
+              <li>Redesigned authentication architecture to resolve key management flaws, improving security and simplifying developer access.</li>
+              <li>Managed cloud-based CI/CD pipelines to automate builds, deployments, and monitoring for reliable production releases.</li>
+              <li>Deployed containerized services on GCP Cloud Run using Docker build configurations to enable automatic scaling for ~10K daily chatbot conversations.</li>
+            </ul>
+            <div class="tech-list">
+              <span>Python</span><span>FastAPI</span><span>GCP</span><span>Docker</span><span>CI/CD</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer</h3>
+                <p class="company">IHRC, Inc — Centers for Disease Control</p>
+              </div>
+              <span class="date">Mar 2021 — Jun 2021</span>
+            </div>
+            <ul class="achievements">
+              <li>Developed a cross-platform mobile app in Flutter/Dart with decision-tree workflows for symptom analysis.</li>
+              <li>Converted scientific requirements into modular decision-tree workflows with reusable components to reduce code duplication.</li>
+              <li>Implemented UI components and state management to ensure dynamic, consistent behavior across iOS/Android.</li>
+            </ul>
+            <div class="tech-list">
+              <span>Flutter</span><span>Dart</span><span>iOS</span><span>Android</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Research Intern</h3>
+                <p class="company">University of Michigan</p>
+              </div>
+              <span class="date">Jan 2021 — Mar 2021</span>
+            </div>
+            <ul class="achievements">
+              <li>Researched programming concepts and produced educational content for a research platform.</li>
+              <li>Contributed to Python projects within the platform and presented progress during weekly team meetings.</li>
+            </ul>
+            <div class="tech-list">
+              <span>Python</span><span>Research</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3 class="project-title"><i class="fas fa-database"></i> Job Market Intelligence Platform</h3>
+          <p class="project-desc">End-to-end data engineering platform demonstrating production-grade ELT patterns with multi-tier validation and dimensional modeling.</p>
+          <ul class="project-features">
+            <li>Multi-tier architecture: PostgreSQL (staging) → Snowflake (production)</li>
+            <li>Kimball-style star schema with 1 fact table, 3 dimensions, 1 bridge table</li>
+            <li>9-task Airflow DAG with cross-database validation and retry logic</li>
+            <li>20+ automated data quality tests via dbt</li>
+            <li>Cost-optimized design: validates locally before expensive cloud processing</li>
+            <li>Interactive Metabase dashboards for business intelligence</li>
+          </ul>
+          <div class="project-pipeline">
+            <code>Airflow DAG → PostgreSQL → Snowflake → dbt → Metabase</code>
+          </div>
+          <div class="tech-list">
+            <span>Snowflake</span><span>Apache Airflow</span><span>dbt</span><span>Docker</span><span>PostgreSQL</span><span>Metabase</span>
+          </div>
+          <a href="https://github.com/Efaz95/job-market-analytics" target="_blank" class="project-btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title"><i class="fas fa-bolt"></i> Service Reliability Platform</h3>
+          <p class="project-desc">Real-time streaming platform that monitors microservices health and detects deployment regressions. Service events flow through Kafka and Spark Structured Streaming, stored in Delta Lake, and visualized in Grafana.</p>
+          <ul class="project-features">
+            <li>Medallion architecture: Bronze (raw) → Silver (aggregated) → Gold (analytics)</li>
+            <li>Sliding window aggregations with watermarking for late-arriving events</li>
+            <li>Custom Python metrics exporter bridging Delta Lake to Prometheus</li>
+            <li>Auto-provisioned Grafana dashboards for real-time service health</li>
+            <li>Batch Gold layer detects post-deploy performance regressions</li>
+            <li>Fully containerized: 8 services orchestrated via Docker Compose</li>
+          </ul>
+          <div class="project-pipeline">
+            <code>Producers → Kafka → Spark → Delta Lake → Prometheus → Grafana</code>
+          </div>
+          <div class="tech-list">
+            <span>Apache Kafka</span><span>Spark Streaming</span><span>Docker</span><span>Delta Lake</span><span>Prometheus</span><span>Grafana</span>
+          </div>
+          <a href="https://github.com/Efaz95/service-reliability-platform" target="_blank" class="project-btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Languages</h4>
+          <div class="skill-items">
+            <span>Python</span>
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Backend</h4>
+          <div class="skill-items">
+            <span>FastAPI</span>
+            <span>Django</span>
+            <span>Spring Boot</span>
+            <span>Node.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Cloud & DevOps</h4>
+          <div class="skill-items">
+            <span>AWS</span>
+            <span>GCP</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Git</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Data Engineering</h4>
+          <div class="skill-items">
+            <span>Apache Airflow</span>
+            <span>Apache Kafka</span>
+            <span>Spark</span>
+            <span>Snowflake</span>
+            <span>dbt</span>
+            <span>Delta Lake</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-compact">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="education-card">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p class="edu-school">Georgia State University</p>
+        <span class="date">Aug 2016 — Dec 2020</span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <span class="footer-copy">© 2025 Efaz Khan</span>
+        <div class="footer-links">
+          <a href="https://github.com/Efaz95" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/efazkhan" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:efazahmed@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
 
   <script src="js/script.js"></script>
 </body>
